@@ -12,6 +12,7 @@ IconButton
 
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
+import LocationSearchingIcon from '@material-ui/icons/LocationSearching';
 
 import {makeStyles} from '@material-ui/core/styles'
 
@@ -58,7 +59,7 @@ const Titlebar = () => {
             className={classes.drawer}>
                 <List>
                     <ListItem>
-                        <Link style={{color: "#606060"}}>
+                        <Link style={{color: "#606060"}} href="https://github.com/piyushverma001/IP-geolocation">
                             Github
                         </Link>
                     </ListItem>
@@ -67,11 +68,12 @@ const Titlebar = () => {
         
             <AppBar className={classes.appbar}>
                 <Toolbar>
+                    <LocationSearchingIcon style={{marginRight:"10px"}}/>
                     <Typography className={classes.heading} variant="h4" >
                         IP lOCATOR
                     </Typography>
                     <div className={classes.link}>
-                        <Link variant="body1" style={{color: "#E5E5E5"}}>
+                        <Link variant="body1" style={{color: "#E5E5E5"}} href="https://github.com/piyushverma001/IP-geolocation">
                             Github
                         </Link>
                     </div>
